@@ -1,0 +1,19 @@
+<!--miniprogram/pages/timeAxis.wxml-->
+<view>
+  <view class="changeDateBox__hidden">
+    <view class="changeDateBox">
+      <view class="{{'changeDateItem ' + (activeIndex === index ? 'changeDateItem__active' : '')}}" wx:for="{{data}}" wx:for-item="item" wx:for-index="index" bindtap="changeDate" data-itemdata="{{item}}" data-indexdata="{{index}}">
+        {{item.day}}
+      </view>
+    </view>
+  </view>
+  <view class="timeAxisContent">
+    <view class="timeAxisBox" wx:for="{{dayDate}}" wx:for-item="item">
+      <view class="timeAxisBox__tiem">{{item.time}}</view>
+      <view class="timeAxisBox__name">{{item.anchor.name}}</view>
+      <picker class="timeAxisBox__setTime" mode="time" value="{{item.anchor.setTime || item.time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+        <view>{{item.anchor.setTime || '默认时间'}}</view>
+      </picker>
+    </view>
+  </view>
+</view>

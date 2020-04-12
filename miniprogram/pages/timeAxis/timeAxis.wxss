@@ -1,0 +1,74 @@
+/* miniprogram/pages/timeAxis.wxss */
+.changeDateBox__hidden {
+  height: 105rpx;
+  /* background-color: green; */
+  overflow: hidden;
+  margin-bottom: 20rpx;
+}
+.changeDateBox {
+  width: 90%;
+  height: 100rpx;
+  /* background-color: red; */
+  margin: 20rpx auto;
+  overflow-x: scroll;
+  display: flex;
+}
+.changeDateItem {
+  height: 80rpx;
+  width: 200rpx;
+  background-color: rgba(170, 170, 170, 0.356);
+  border-radius: 20rpx;
+  line-height: 80rpx;
+  margin-left: 20rpx;
+  flex-shrink: 0;
+  text-align: center;
+}
+.changeDateItem:first-child {
+  margin-left: 0rpx;
+}
+.changeDateItem__active {
+  background-color: rgb(118, 234, 255);
+}
+.timeAxisContent {
+  padding-right: 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+.timeAxisContent::before {
+  content: ' ';
+  height: 100%;
+  width: 6rpx;
+  background-color: #666;
+  position: absolute;
+  left: 44rpx;
+  top: 0rpx;
+}
+.timeAxisBox {
+  height: 100rpx;
+  width: 85%;
+  padding-left: 20rpx;
+  background-color: rgba(170, 170, 170, 0.356);
+  margin-bottom: 25rpx;
+  position: relative;
+}
+.timeAxisBox::before {
+  content: ' ';
+  height: 5rpx;
+  width: 36rpx;
+  background-color: #666;
+  position: absolute;
+  left: -35rpx;
+  top: 48rpx;
+}
+.timeAxisBox__tiem,
+.timeAxisBox__name,
+.timeAxisBox__setTime{
+  display: inline-block;
+  line-height: 100rpx;
+  margin-right: 40rpx;
+}
+.timeAxisBox__setTime {
+  float: right;
+}
