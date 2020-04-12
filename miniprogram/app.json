@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/home/home",
     "pages/index/index",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
@@ -16,11 +17,28 @@
     "pages/timeAxis/timeAxis"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "直播提醒",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#9299A1",
+    "selectedColor": "#3190FF",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/home/homeNC.png",
+        "selectedIconPath": "images/home/homeC.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "我的",
+        "iconPath": "images/home/mineNC.png",
+        "selectedIconPath": "images/home/mineC.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2"

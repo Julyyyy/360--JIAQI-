@@ -1,0 +1,35 @@
+<!--miniprogram/pages/home/home.wxml-->
+<view class="searchClass">
+  <image src="../../images/home/search.png"></image>
+  <input placeholder="输入" class="searchText" placeholder-class="searchText-placeholder"></input>
+</view>
+
+<swiper autoplay='true' class="swiper-container">
+ <block wx:for="{{bnrUrl}}" wx:for-index="index">
+    <swiper-item>
+      <image src='{{item.url}}' class='swiper-image'></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view>
+  <template is="category" data="{{categoryData:categoryRow}}" />
+</view>
+
+<!-- 八种分类 -->
+<template name="category">
+  <view class="category-row">
+    <view wx:for="{{categoryData}}" class="category-item" data-item="{{item.title}}">
+      <image src="{{item.pic}}"></image>
+      <view>{{item.title}}</view>
+    </view>
+  </view>
+</template>
+
+<template name="categoryLists">
+  <block wx:for="{{categoryLists}}" wx:for-index="index">
+   <view>
+    
+   </view>
+  </block>
+</template>
