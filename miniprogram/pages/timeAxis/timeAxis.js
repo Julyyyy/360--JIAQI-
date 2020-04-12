@@ -13,13 +13,14 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: async function (options) {
     const db = wx.cloud.database()
-    // db.collection('user').where({
-    //   name: 'xxx'
-    // }).get().then(res => {
-    //   console.log(res)
-    // })
+    const _ = db.command
+    db.collection('anchor').where({
+      platname: _.eq('鱼')
+    }).get().then(res => {
+      console.log(res.data)
+    })
 
     // db.collection('user').where({
     //   name: 'xxx'
@@ -32,17 +33,16 @@ Page({
     //   }
     // })
 
-    // db.collection('user').where({
-    //   name: 'xxx'
-    // }).update({
-    //   data: {
-    //     name: 'dddd'
-    //   },
-    //   success: function(res) {
-    //     console.log('res.data')
-    //     console.log(res)
-    //   }
-    // })
+    // try {
+    //   await db.collection('user').doc('79a2c43f5e92eed60087082c0a841402')
+    //   .update({
+    //     data: {
+    //       name: 'aaa'
+    //     },
+    //   })
+    // } catch(e) {
+    //   console.error(e)
+    // }
     
     this.setData({
       data: [

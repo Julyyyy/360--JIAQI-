@@ -1,4 +1,8 @@
 /* miniprogram/pages/timeAxis.wxss */
+.changeDateBox__hidden,
+.timeAxisContent {
+  color: #666;
+}
 .changeDateBox__hidden {
   height: 105rpx;
   /* background-color: green; */
@@ -16,7 +20,7 @@
 .changeDateItem {
   height: 80rpx;
   width: 200rpx;
-  background-color: rgba(170, 170, 170, 0.356);
+  background-color: rgb(208, 235, 255);
   border-radius: 20rpx;
   line-height: 80rpx;
   margin-left: 20rpx;
@@ -27,7 +31,8 @@
   margin-left: 0rpx;
 }
 .changeDateItem__active {
-  background-color: rgb(118, 234, 255);
+  background-color: rgb(159, 204, 255);
+  color: #fff;
 }
 .timeAxisContent {
   padding-right: 40rpx;
@@ -40,7 +45,7 @@
   content: ' ';
   height: 100%;
   width: 6rpx;
-  background-color: #666;
+  background-color: #ddd;
   position: absolute;
   left: 44rpx;
   top: 0rpx;
@@ -49,7 +54,7 @@
   height: 100rpx;
   width: 85%;
   padding-left: 20rpx;
-  background-color: rgba(170, 170, 170, 0.356);
+  background-color: rgb(208, 235, 255);
   margin-bottom: 25rpx;
   position: relative;
 }
@@ -57,7 +62,7 @@
   content: ' ';
   height: 5rpx;
   width: 36rpx;
-  background-color: #666;
+  background-color: #ddd;
   position: absolute;
   left: -35rpx;
   top: 48rpx;
