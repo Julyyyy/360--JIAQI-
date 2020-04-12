@@ -1,0 +1,23 @@
+<!--pages/added-list/added-list.wxml-->
+<view class="container">
+  <view class="content">
+    <view class="user-item" wx:for='{{addedZhubo}}' wx:if='{{item.status}}' >
+      <image src="{{item.img}}"></image>
+      <view class="sub-item">
+        <view >
+          <text class="zhubo-name">{{item.name}}</text>
+          <text class="zhubo-label">{{item.lable}}</text>
+        </view>
+        <view >
+          <view class="zhubo-title"><text >标题</text></view>
+          <text class="zhubo-title-content">{{item.title}}</text>
+        </view>
+      </view >
+        <view class="alarm-switch">
+          <switch type="switch"  size='mini' bindchange='switch1Change' id="{{index}}" ></switch>
+        </view>
+      </view>
+      <text>{{item.setAlarm}}</text>
+  </view>
+  
+</view>
