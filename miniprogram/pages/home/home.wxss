@@ -1,4 +1,5 @@
 /* miniprogram/pages/home/home.wxss */
+
 .searchClass {
   background: #f5f6f8;
   width: 686rpx;
@@ -46,13 +47,67 @@
 .classLists {
   margin: 70rpx 32rpx 0 32rpx;
 }
-.swiper-container{
-   width: 684rpx;
-   height: 300rpx;
-   margin: 36rpx auto 56rpx auto;
-   display: block; 
+
+.swiper-container {
+  width: 684rpx;
+  height: 300rpx;
+  margin: 36rpx auto 56rpx auto;
+  display: block;
 }
-.swiper-image{
+
+.swiper-image {
   width: 100%;
   height: 100%;
+}
+
+.classTypeActive {
+  color: #3190ff;
+  /* position: relative; */
+}
+
+.categorySwiper {
+  margin: 0 32rpx;
+}
+
+.head {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+
+.authorInfo {
+  display: flex;
+}
+
+.cover {
+  width: 100%;
+  height: 150px;
+  border-radius: 6px;
+}
+
+.currCategory {
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.currCategory-item {
+  margin-bottom: 20px;
+}
+
+.currCategory-item-title {
+  margin: 5px 0;
+  color: rgba(49, 53, 60, 1);
+  font-size: 15px;
+}
+
+.author-info {
+  color: rgba(116, 122, 131, 1);
+  font-size: 12px;
+}
+
+.alarm-switch {
+  align-self: center;
+  flex-grow: 1;
+  text-align: right;
 }

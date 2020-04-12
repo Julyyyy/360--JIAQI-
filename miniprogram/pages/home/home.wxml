@@ -4,32 +4,39 @@
   <input placeholder="输入" class="searchText" placeholder-class="searchText-placeholder"></input>
 </view>
 
+<!-- 轮播图 -->
 <swiper autoplay='true' class="swiper-container">
- <block wx:for="{{bnrUrl}}" wx:for-index="index">
+  <block wx:for="{{bnrUrl}}" wx:for-index="index" wx:key="index">
     <swiper-item>
       <image src='{{item.url}}' class='swiper-image'></image>
     </swiper-item>
   </block>
 </swiper>
 
-<view>
-  <template is="category" data="{{categoryData:categoryRow}}" />
+<!-- 四个直播类别 -->
+<view class="category-row">
+  <view wx:for="{{categoryRow}}" class="category-item  {{currCategoryIndex == index ? 'classTypeActive' : ''}}" bind:tap="chooseCategoryType" data-index="{{index}}" wx:key="index">
+    <image src="{{item.pic}}"></image>
+    <view>{{item.title}}</view>
+  </view>
 </view>
 
-<!-- 八种分类 -->
-<template name="category">
-  <view class="category-row">
-    <view wx:for="{{categoryData}}" class="category-item" data-item="{{item.title}}">
-      <image src="{{item.pic}}"></image>
-      <view>{{item.title}}</view>
+<!-- 直播类别下的直播列表 -->
+<view class="currCategory">
+  <block wx:for="{{currCategory}}" wx:for-index="index">
+    <view class="currCategory-item">
+      <image src="{{item.cover}}" class="cover"></image>
+      <view class="currCategory-item-title">{{item.videotitle}}</view>
+      <view class="authorInfo">
+        <image src="{{item.head}}" class="head"></image>
+        <view class="author-info">
+          <view>{{item.broadcaster}}</view>
+          <view>{{item.broadtime}}</view>
+        </view>
+        <view class="alarm-switch">
+          <switch type="switch" size='mini' bindchange='switch1Change' id="{{index}}"></switch>
+        </view>
+      </view>
     </view>
-  </view>
-</template>
-
-<template name="categoryLists">
-  <block wx:for="{{categoryLists}}" wx:for-index="index">
-   <view>
-    
-   </view>
   </block>
-</template>
+</view>
