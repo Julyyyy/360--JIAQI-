@@ -162,8 +162,15 @@ Page({
         // icon: 'success',
       })
     )
-  }
+  },
+  goDetail(){
 
+  },
+  goSearchPage(){
+    wx.navigateTo({
+      url: '../search-list/search-list',
+    })
+  }
 
 
 

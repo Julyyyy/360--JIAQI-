@@ -1,0 +1,23 @@
+<!--miniprogram/pages/search-list/search-list.wxml-->
+<view class="searchClass">
+  <image src="../../images/home/search.png"></image>
+  <input placeholder="输入主播名" class="searchText" placeholder-class="searchText-placeholder" bindfocus="goSearchPage" bindconfirm="search" focus="true" auto-focus="true"></input>
+</view>
+<view class="currCategory">
+  <block wx:for="{{currCategory}}" wx:for-index="index">
+    <view class="currCategory-item">
+      <image src="{{item.cover}}" class="cover"></image>
+      <view class="currCategory-item-title">{{item.videotitle}}</view>
+      <view class="authorInfo">
+        <image src="{{item.head}}" class="head"></image>
+        <view class="author-info">
+          <view bindtap="goDetail">{{item.broadcaster}}</view>
+          <view>{{item.broadtime}}</view>
+        </view>
+        <view class="alarm-switch">
+          <switch type="switch" size='mini' bindchange='switch1Change' id="{{index}}"></switch>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

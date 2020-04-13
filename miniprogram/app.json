@@ -3,7 +3,8 @@
     "pages/home/home",
     "pages/alarm/alarm",
     "pages/added-list/added-list",
-    "pages/timeAxis/timeAxis"
+    "pages/timeAxis/timeAxis",
+    "pages/search-list/search-list"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,5 +1,4 @@
-/* miniprogram/pages/home/home.wxss */
-
+/* miniprogram/pages/search-list/search-list.wxss */
 .searchClass {
   background: #f5f6f8;
   width: 686rpx;

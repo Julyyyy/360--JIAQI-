@@ -1,7 +1,7 @@
 <!--miniprogram/pages/home/home.wxml-->
 <view class="searchClass">
   <image src="../../images/home/search.png"></image>
-  <input placeholder="输入" class="searchText" placeholder-class="searchText-placeholder"></input>
+  <input placeholder="输入主播名" class="searchText" placeholder-class="searchText-placeholder" bindfocus="goSearchPage"></input>
 </view>
 
 <!-- 轮播图 -->
@@ -30,7 +30,7 @@
       <view class="authorInfo">
         <image src="{{item.head}}" class="head"></image>
         <view class="author-info">
-          <view>{{item.broadcaster}}</view>
+          <view bindtap="goDetail">{{item.broadcaster}}</view>
           <view>{{item.broadtime}}</view>
         </view>
         <view class="alarm-switch">
