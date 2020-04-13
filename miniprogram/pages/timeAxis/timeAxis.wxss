@@ -19,7 +19,7 @@
 }
 .changeDateItem {
   height: 80rpx;
-  width: 200rpx;
+  padding: 0 15rpx 0 15rpx;
   background-color: rgb(208, 235, 255);
   border-radius: 20rpx;
   line-height: 80rpx;
