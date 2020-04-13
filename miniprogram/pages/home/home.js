@@ -154,7 +154,6 @@ Page({
       case 1:
         var that=this
         that.updatePickedName()
-
         db.collection('anchor').where({
           platname: '斗鱼直播'
         }).get().then(res => {
@@ -244,9 +243,6 @@ Page({
     }
   },
   goDetail(e){
-    wx.navigateTo({
-      url: e.currentTarget.dataset.url
-    })
   },
   goSearchPage(){
     wx.navigateTo({

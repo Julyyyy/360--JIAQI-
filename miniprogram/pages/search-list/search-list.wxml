@@ -15,7 +15,7 @@
           <view>{{item.broadtime}}</view>
         </view>
         <view class="alarm-switch">
-          <switch type="switch" size='mini' bindchange='switch1Change' id="{{index}}"></switch>
+          <switch type="switch" size='mini' bindchange='switch1Change' id="{{index}}" checked="{{item.isPicked==1?'1':''}}"></switch>
         </view>
       </view>
     </view>

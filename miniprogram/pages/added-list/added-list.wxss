@@ -48,6 +48,7 @@ image {
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid rgba(116, 122, 131, 0.2);
+  padding: 5px 0;
 }
 
 .sub-item {
