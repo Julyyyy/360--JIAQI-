@@ -1,7 +1,7 @@
 <!--miniprogram/pages/home/home.wxml-->
 <view class="searchClass">
   <image src="../../images/home/search.png"></image>
-  <input placeholder="输入" class="searchText" placeholder-class="searchText-placeholder"></input>
+  <input placeholder="输入主播名" class="searchText" placeholder-class="searchText-placeholder" bindfocus="goSearchPage"></input>
 </view>
 
 <!-- 轮播图 -->
