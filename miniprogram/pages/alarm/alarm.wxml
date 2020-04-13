@@ -2,9 +2,9 @@
 <view class="container">
   <view class="header">
     <!-- <image id="user-img" src='{{src}}'></image> -->
-     <open-data id="user-img" type='userAvatarUrl'></open-data>
-     <open-data id="user-name" type='userNickName'></open-data>
-    <button size="mini" class="login">{{login_status}}</button>
+    <open-data id="user-img" type='userAvatarUrl'></open-data>
+    <open-data id="user-name" type='userNickName'></open-data>
+    <button size="mini" class="login"></button>
   </view>
   <view class="content">
     <view class="user-item" bindtap="toTimeAxis">

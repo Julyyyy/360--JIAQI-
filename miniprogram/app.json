@@ -9,7 +9,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "直播提醒",
+    "navigationBarTitleText": "直播早知道",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
