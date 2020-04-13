@@ -3,7 +3,7 @@
   display: block;
   margin: 0;
   padding: 0;
-  background:gainsboro;
+  background:#f5f6f8;
   height: 100vh;
 }
 .header{
@@ -40,11 +40,11 @@
 
 .user-item{
   display: flex;
-  border-bottom: 1px solid gray;
   line-height:50px;
   height: 50px;
   background: white;
-  border-bottom: 1px solid gray 0.5;
+  border-bottom: 1px solid rgba(116, 122, 131, 0.2);
+  color: rgba(49, 53, 60, 1);
 }
 .icon-pagetoright{
   flex-grow: 1;
@@ -61,4 +61,5 @@
   padding-right: 5px;
   width: 30px;
   height: 30px;
+  margin-left: 20px;
 }

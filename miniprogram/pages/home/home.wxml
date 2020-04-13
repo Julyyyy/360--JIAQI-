@@ -26,7 +26,7 @@
   <block wx:for="{{currCategory}}" wx:for-index="index">
     <view class="currCategory-item">
       <image src="{{item.cover}}" class="cover"></image>
-      <view class="currCategory-item-title">{{item.videotitle}}</view>
+      <view class="currCategory-item-title" bindtap="goDetail" data-url="{{item.videourl}}">{{item.videotitle}}</view>
       <view class="authorInfo">
         <image src="{{item.head}}" class="head"></image>
         <view class="author-info">

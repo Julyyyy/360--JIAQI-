@@ -1,81 +1,91 @@
-/* pages/added-list/added-list.wxss *//* pages/alarm/alarm.wxss */
-.container{
+/* pages/added-list/added-list.wxss */
+
+/* pages/alarm/alarm.wxss */
+
+.container {
   display: block;
   margin: 0;
   padding: 0;
-  background:gainsboro;
+  background: #f5f6f8;
   height: 100vh;
 }
-.header{
+
+.header {
   background: white;
   display: flex;
   height: 60px;
   align-items: center;
   /* flex-direction: column; */
-  justify-content:space-around;
+  justify-content: space-around;
   padding-bottom: 5px;
 }
 
-image{
+image {
   margin-left: 20px;
   width: 50px;
   height: 50px;
   border-radius: 50px;
   vertical-align: middle;
 }
-#user-name{
+
+#user-name {
   padding-left: 10px;
 }
-.login{
+
+.login {
   margin-right: 20px;
 }
-.content{
+
+.content {
   margin-top: 5px;
 }
 
-.user-item{
+.user-item {
   display: flex;
-  border-bottom: 1px solid gray;
-  line-height:20px;
+  line-height: 20px;
   height: 60px;
   background: white;
- justify-content: space-between;
-align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(116, 122, 131, 0.2);
 }
 
-.sub-item{
+.sub-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 10px;
 }
 
-.alarm-switch{
+.alarm-switch {
   align-self: center;
   flex-grow: 1;
   text-align: right;
 }
 
-.zhubo-name{
+.zhubo-name {
   font-weight: 600;
   padding-right: 5px;
 }
-.zhubo-label{
+
+.zhubo-label {
   font-size: small;
   color: rgba(0, 0, 0, 0.5);
 }
-.zhubo-title{
+
+.zhubo-title {
   color: red;
   display: inline-block;
   width: 30px;
   height: 12px;
   font-size: 10px;
   text-align: center;
-  line-height:12px;
-  background: rgba(255,0,0,0.2);
+  line-height: 12px;
+  background: rgba(255, 0, 0, 0.2);
   margin-right: 6px;
 }
-.zhubo-title-content{
+
+.zhubo-title-content {
   font-size: 10px;
   color: red;
 }

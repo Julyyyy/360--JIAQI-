@@ -243,8 +243,10 @@ Page({
       })
     }
   },
-  goDetail(){
-
+  goDetail(e){
+    wx.navigateTo({
+      url: e.currentTarget.dataset.url
+    })
   },
   goSearchPage(){
     wx.navigateTo({
