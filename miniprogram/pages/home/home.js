@@ -162,8 +162,10 @@ Page({
         // icon: 'success',
       })
     )
+  },
+  goDetail(){
+    
   }
-
 
 
 

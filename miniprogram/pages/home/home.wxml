@@ -30,7 +30,7 @@
       <view class="authorInfo">
         <image src="{{item.head}}" class="head"></image>
         <view class="author-info">
-          <view>{{item.broadcaster}}</view>
+          <view bindtap="goDetail">{{item.broadcaster}}</view>
           <view>{{item.broadtime}}</view>
         </view>
         <view class="alarm-switch">
