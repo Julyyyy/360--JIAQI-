@@ -1,16 +1,16 @@
 <!--pages/added-list/added-list.wxml-->
 <view class="container">
   <view class="content">
-    <view class="user-item" wx:for='{{addedZhubo}}' wx:if='{{item.status}}' >
-      <image src="{{item.img}}"></image>
+    <view class="user-item" wx:for='{{addedZhubo}}' wx:if='{{item.videostatus}}' >
+      <image src="{{item.head}}"></image>
       <view class="sub-item">
         <view >
-          <text class="zhubo-name">{{item.name}}</text>
-          <text class="zhubo-label">{{item.lable}}</text>
+          <text class="zhubo-name">{{item.broadcaster}}</text>
+          <text class="zhubo-label">{{item.broadtime}}</text>
         </view>
         <view >
           <view class="zhubo-title"><text >标题</text></view>
-          <text class="zhubo-title-content">{{item.title}}</text>
+          <text class="zhubo-title-content">{{item.videotitle}}</text>
         </view>
       </view >
         <view class="alarm-switch">

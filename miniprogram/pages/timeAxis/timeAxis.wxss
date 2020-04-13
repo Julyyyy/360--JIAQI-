@@ -7,7 +7,7 @@
   height: 105rpx;
   /* background-color: green; */
   overflow: hidden;
-  margin-bottom: 20rpx;
+  margin-bottom: 40rpx;
 }
 .changeDateBox {
   width: 90%;
@@ -72,8 +72,12 @@
 .timeAxisBox__setTime{
   display: inline-block;
   line-height: 100rpx;
-  margin-right: 40rpx;
+  margin-right: 30rpx;
+}
+.timeAxisBox__name {
+  margin-right: 0;
 }
 .timeAxisBox__setTime {
   float: right;
+  margin-right: 20rpx;
 }

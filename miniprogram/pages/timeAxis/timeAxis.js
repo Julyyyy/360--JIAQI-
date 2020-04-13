@@ -14,317 +14,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: async function (options) {
-    const db = wx.cloud.database()
-    const _ = db.command
-    db.collection('anchor').where({
-      platname: _.eq('鱼')
-    }).get().then(res => {
-      console.log(res.data)
-    })
-
-    // db.collection('user').where({
-    //   name: 'xxx'
-    // }).update({
-    //   data: {
-    //     name: 'hhh'
-    //   },
-    //   success: data => {
-    //     console.log(data);
-    //   }
-    // })
-
-    // try {
-    //   await db.collection('user').doc('79a2c43f5e92eed60087082c0a841402')
-    //   .update({
-    //     data: {
-    //       name: 'aaa'
-    //     },
-    //   })
-    // } catch(e) {
-    //   console.error(e)
-    // }
-    
-    this.setData({
-      data: [
-        {
-          day: '2020/04/12',
-          msg: [
-            {
-              time: '01:00:00',
-              anchor: {
-                name: 'xhy1',
-                setTime: '01:00:00',
-              }
-            },
-            {
-              time: '05:00:00',
-              anchor: {
-                name: 'xhy2',
-              }
-            },
-            {
-              time: '11:00:00',
-              anchor: {
-                name: 'xhy3',
-                setTime: '01:00:00',
-              }
-            },
-            {
-              time: '01:00:00',
-              anchor: {
-                name: 'xhy1',
-                setTime: '01:00:00',
-              }
-            },
-            {
-              time: '05:00:00',
-              anchor: {
-                name: 'xhy2',
-              }
-            },
-            {
-              time: '11:00:00',
-              anchor: {
-                name: 'xhy3',
-                setTime: '01:00:00',
-              }
-            },
-            {
-              time: '01:00:00',
-              anchor: {
-                name: 'xhy1',
-                setTime: '01:00:00',
-              }
-            },
-            {
-              time: '05:00:00',
-              anchor: {
-                name: 'xhy2',
-              }
-            },
-            {
-              time: '11:00:00',
-              anchor: {
-                name: 'xhy3',
-                setTime: '01:00:00',
-              }
-            },
-            {
-              time: '01:00:00',
-              anchor: {
-                name: 'xhy1',
-                setTime: '01:00:00',
-              }
-            },
-            {
-              time: '05:00:00',
-              anchor: {
-                name: 'xhy2',
-              }
-            },
-            {
-              time: '11:00:00',
-              anchor: {
-                name: 'xhy3',
-                setTime: '01:00:00',
-              }
-            },
-            {
-              time: '01:00:00',
-              anchor: {
-                name: 'xhy1',
-                setTime: '01:00:00',
-              }
-            },
-            {
-              time: '05:00:00',
-              anchor: {
-                name: 'xhy2',
-              }
-            },
-            {
-              time: '11:00:00',
-              anchor: {
-                name: 'xhy3',
-                setTime: '01:00:00',
-              }
-            },
-          ]
-        },
-        {
-          day: '2020/04/13',
-          msg: [
-            {
-              time: '01:00:00',
-              anchor: {
-                name: 'xhy13333',
-              }
-            },
-            {
-              time: '05:00:00',
-              anchor: {
-                name: 'xhy2',
-              }
-            },
-            {
-              time: '11:00:00',
-              anchor: {
-                name: 'xhy3',
-              }
-            },
-          ]
-        },
-        {
-          day: '2020/04/14',
-          msg: [
-            {
-              time: '01:00:00',
-              anchor: {
-                name: 'xhy144444',
-              }
-            },
-            {
-              time: '05:00:00',
-              anchor: {
-                name: 'xhy2',
-              }
-            },
-            {
-              time: '11:00:00',
-              anchor: {
-                name: 'xhy3',
-              }
-            },
-          ]
-        },
-        {
-          day: '2020/04/15',
-          msg: [
-            {
-              time: '01:00:00',
-              anchor: {
-                name: 'xhy15555',
-              }
-            },
-            {
-              time: '05:00:00',
-              anchor: {
-                name: 'xhy2',
-              }
-            },
-            {
-              time: '11:00:00',
-              anchor: {
-                name: 'xhy3',
-              }
-            },
-          ]
-        },
-      ],
-      dayDate: [
-        {
-          time: '01:00:00',
-          anchor: {
-            name: 'xhy1',
-            setTime: '01:00:00',
-          }
-        },
-        {
-          time: '05:00:00',
-          anchor: {
-            name: 'xhy2',
-          }
-        },
-        {
-          time: '11:00:00',
-          anchor: {
-            name: 'xhy3',
-            setTime: '01:00:00',
-          }
-        },
-        {
-          time: '01:00:00',
-          anchor: {
-            name: 'xhy1',
-            setTime: '01:00:00',
-          }
-        },
-        {
-          time: '05:00:00',
-          anchor: {
-            name: 'xhy2',
-          }
-        },
-        {
-          time: '11:00:00',
-          anchor: {
-            name: 'xhy3',
-            setTime: '01:00:00',
-          }
-        },
-        {
-          time: '01:00:00',
-          anchor: {
-            name: 'xhy1',
-            setTime: '01:00:00',
-          }
-        },
-        {
-          time: '05:00:00',
-          anchor: {
-            name: 'xhy2',
-          }
-        },
-        {
-          time: '11:00:00',
-          anchor: {
-            name: 'xhy3',
-            setTime: '01:00:00',
-          }
-        },
-        {
-          time: '01:00:00',
-          anchor: {
-            name: 'xhy1',
-            setTime: '01:00:00',
-          }
-        },
-        {
-          time: '05:00:00',
-          anchor: {
-            name: 'xhy2',
-          }
-        },
-        {
-          time: '11:00:00',
-          anchor: {
-            name: 'xhy3',
-            setTime: '01:00:00',
-          }
-        },
-        {
-          time: '01:00:00',
-          anchor: {
-            name: 'xhy1',
-            setTime: '01:00:00',
-          }
-        },
-        {
-          time: '05:00:00',
-          anchor: {
-            name: 'xhy2',
-          }
-        },
-        {
-          time: '11:00:00',
-          anchor: {
-            name: 'xhy3',
-            setTime: '01:00:00',
-          }
-        },
-      ]
-    })
-    console.log(this.data.data)
+    this.getData();
   },
 
   changeDate(e) {
@@ -335,7 +25,56 @@ Page({
   },
 
   bindTimeChange(e) {
-    console.log(e);
+    const db = wx.cloud.database()
+    db.collection('picked')
+      .doc(e.currentTarget.dataset.id.anchor._id)
+      .update({
+        data: {
+          settime: e.detail.value
+        }
+      })
+      .then((e) => {
+        this.getData()
+      })
+  },
+
+  async getData() {
+    const db = wx.cloud.database()
+    const data = await db.collection('picked').get()
+    const lineData = []
+    data.data.forEach(item => {
+      const index = lineData.findIndex(i => i.day === item.broadtime)
+      if (index === -1) {
+        lineData.push({
+          day: item.broadtime,
+          msg: [{
+            time: item.broaddate,
+            anchor: {
+              name: item.broadcaster,
+              setTime: item.settime,
+              ...item
+            }
+          }]
+        })
+      } else {
+        lineData[index].msg.push({
+          time: item.broaddate,
+          anchor: {
+            name: item.broadcaster,
+            setTime: item.settime,
+            ...item
+          }
+        })
+      }
+    })
+    lineData.forEach(item => {
+      item.msg.sort((a, b) => a.time.split(':')[0] - b.time.split(':')[0])
+    })
+    lineData.sort((a, b) => a.day.split('-')[2] - b.day.split('-')[2])
+    this.setData({
+      data: lineData,
+      dayDate: lineData[0].msg
+    })
   },
 
   /**

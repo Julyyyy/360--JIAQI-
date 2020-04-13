@@ -3,11 +3,11 @@
   <view class="header">
     <!-- <image id="user-img" src='{{src}}'></image> -->
      <open-data id="user-img" type='userAvatarUrl'></open-data>
-     <open-data id="user-name" type='userNickName' lang="zh_cn"></open-data>
+     <open-data id="user-name" type='userNickName'></open-data>
     <button size="mini" class="login">{{login_status}}</button>
   </view>
   <view class="content">
-    <view class="user-item" >
+    <view class="user-item" bindtap="toTimeAxis">
       <image class='icon'src="./src/img/time.png"></image>
       <text>我的看单</text>
       <view class="icon-pagetoright"> <image class="icon" src='./src/img/page_turning_right.png'></image></view>

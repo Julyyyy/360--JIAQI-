@@ -13,6 +13,11 @@ Page({
         url: '../added-list/added-list',
       })
   },
+  toTimeAxis(){
+    wx.navigateTo({
+      url: '../timeAxis/timeAxis',
+    })
+  },
   getUsers(e){
    console.log(e)
  },

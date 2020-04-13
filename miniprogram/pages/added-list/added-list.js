@@ -1,30 +1,12 @@
 // pages/added-list/added-list.js
+const db = wx.cloud.database()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    addedZhubo:[{
-      name:'李佳琪',
-      plateforem:'淘宝',
-      img:'https://tvax4.sinaimg.cn/crop.0.0.512.512.180/7558df23ly8gdir9ocve8j20e80e8gm4.jpg?KID=imgbed,tva&Expires=1586689918&ssig=hC%2FGMzIN1V',
-      description:'斗鱼绝地求生女主播',
-      lable:'带货',
-      title:'美妆pick',
-      status:true,
-      setAlarm:false
-    },
-    {
-      name:'一只小团团OvO',
-      plateforem:'斗鱼TV',
-      img:'https://apic.douyucdn.cn/upload/avatar_v3/201810/7bdc0080915292eac70eaa41f950792b_big.jpg',
-      description:'美ONE签约达人 知名美妆博主 时尚美妆视频自媒体',
-      lable:'绝地求生',
-      title:'今晚带粉丝上分',
-      status:true,
-      setAlarm:false
-    }]
+    addedZhubo:[]
   },
 
   switch1Change:function(e){
@@ -45,7 +27,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    db.collection('picked').get().then(res => {
+      this.setData({
+        addedZhubo: res.data
+      })
+    })
   },
 
   /**
